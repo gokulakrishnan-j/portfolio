@@ -39,7 +39,7 @@ var stop =   setInterval(()=>{
    
 gokul()
   }
-},200)
+},100)
 
 function gokul (){
 clearInterval(stop)
