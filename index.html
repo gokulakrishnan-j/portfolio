@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css" />
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,18 +27,41 @@
     <div class="link"><a href="https://www.linkedin.com/in/gokulakrishnan-j-b50290208/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" focusable="false"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg></a></div>
     
     
-   <a id="my_resume_edit" href="https://ik.imagekit.io/qebk8kctw/gokulakrishnanCV.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1677749061199" target="_blank" class="badge badge-dark">Resume</a>
+   <a id="my_resume_edit" href="https://ik.imagekit.io/qebk8kctw/gokulakrishnanCV.pdf?updatedAt=1678865660515" target="_blank" class="badge badge-dark">Resume</a>
   
 </div>
+<div class="labelAfter650Px">
+  <label class="labelForSection" for="aboutLabel">About</label>
+  <label class="labelForSection" for="skillLabel">Skills</label>
+  <label class="labelForSection" for="projectLabel">Project</label>
+</div>
+<div>
+  <div class="labelBefore650Px">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class=" p-4">
+        <label class="labelForSection" for="aboutLabel">About</label>
+        <div>
+  <label class="labelForSection" for="skillLabel">Skills</label>
+</div>
+  <label class="labelForSection" for="projectLabel">Project</label>
+      </div>
+    </div>
+    <nav class=" navbar-dark ">
+      <button class="navButton"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
   </nav>
 
  
 
 
 
-    <div class="about">
+    <div class="about" >
         <div class="about_me">
-          Hi i'm Gokulakrishnan J <br/>
+          <input type="button" class="labelInput" value="Hi i'm Gokulakrishnan J" id="aboutLabel" />
+          <br/>
           <div class="fullStackName">
       <span id="fullstack"  > </span> <span id="offName"></span>
       </div><br/>
@@ -54,9 +78,12 @@
         
 
 
-    <div class="skills_of_all">
-        <div class="skills_title">Skills and Experience</div>
+    <div class="skills_of_all" >
+        <div class="skills_title" ><input type="button" class="labelInput"  value="Skills and Experience" id="skillLabel" /></div>
+        
+        
            <div class="skill_center">
+            
                 <div class="skills"><img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"></div>
                 <div class="skills"><img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"></div>
                 <div class="skills"><img  class="skill_img" src="https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" alt="Bootstrap"></div>
@@ -71,8 +98,9 @@
             </div>
             
     
-            <div class="project">
-                <div class="project_title">Project</div>
+            <div class="project" >
+                <div class="project_title"><input type="button" class="labelInput" value="Project" id="projectLabel" /></div>
+                
                 <div class="project_center">
                  
                 <div class="carded" style="width: 18rem;">
@@ -80,9 +108,37 @@
                     
                     <div class="card-body">
                       <div class="cards">
-                      <p class="card-text"> <a class="project_link" href="https://ticketing-system-for-query.netlify.app/home" target="_blank"> <b>Ticketing system</b>  for query resolving.  </a> <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/ticketing-system-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/Ticketing-system/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
+                      <p class="card-text"> <a class="project_link" href="https://ticketing-system-for-query.netlify.app/home" target="_blank"> <b>Ticketing system</b>  for query resolving.</a>  </a></br> Duration : 2 week  <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/ticketing-system-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/Ticketing-system/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
                       <h6 >About :</h6>
                       <p > Ticketing system application is created to solve students query. A application created with authentication and authorization by using <b>jwt</b>. <b>Express.js</b> is used for creating server. <b> MongoDB</b> is used to store a data in database </p>
+                    </div>
+                  </div>
+                   
+                 
+                  </div>
+
+                  <div class="carded" style="width: 18rem;">
+                    <img  id="projectImage" src="https://ik.imagekit.io/qebk8kctw/Picsart_23-03-24_12-25-37-799.jpg?updatedAt=1679642073611" class="card-img-top" alt="Auction">
+                    
+                    <div class="card-body">
+                      <div class="cards">
+                      <p class="card-text"> <a class="project_link" href="https://strong-biscochitos-e35744.netlify.app/auction/login" target="_blank"> <b>Auction</b> Auction for cricket players </a></br> Duration : 4 days  <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/auction-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/auction-node/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
+                      <h6 >About :</h6>
+                      <p >Application for <b>Auction</b> a cricket players. A application created with <b>Sockit.io</b> and also created with authentication and authorization by using jwt. Express.js is used for creating server. MongoDB is used to store a data in database  <b>jwt</b>. <b>Express.js</b> is used for creating server. <b> MongoDB</b> is used to store a data in database </p>
+                    </div>
+                  </div>
+                   
+                 
+                  </div>
+
+                  <div class="carded" style="width: 18rem;">
+                    <img  id="projectImage" src="https://ik.imagekit.io/qebk8kctw/Picsart_23-03-24_12-41-40-389.png?updatedAt=1679642073507" class="card-img-top" alt="Chat box">
+                    
+                    <div class="card-body">
+                      <div class="cards">
+                      <p class="card-text"> <a class="project_link" href="https://super-tapioca-5273dd.netlify.app/user/signin" target="_blank"> <b>Chat box</b> Chat with friends  </a></br> Duration : 3 days  <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/chat-box-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/chat-box/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
+                      <h6 >About :</h6>
+                      <p > Chat with group of friends and family. A application created with <b>Sockit.io</b> and also created with authentication and authorization by using jwt. Express.js is used for creating server. MongoDB is used to store a data in database  <b>jwt</b>. <b>Express.js</b> is used for creating server. <b> MongoDB</b> is used to store a data in database </p>
                     </div>
                   </div>
                    
@@ -94,7 +150,7 @@
                     
                     <div class="card-body">
                       <div class="cards">
-                      <p class="card-text"> <a class="project_link" href="https://astonishing-blancmange-b1fd4a.netlify.app/login" target="_blank"> <b>E-commerce</b> Selling Spicys  </a> <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/atmasampanna-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/atmasampanna-node/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
+                      <p class="card-text"> <a class="project_link" href="https://astonishing-blancmange-b1fd4a.netlify.app/login" target="_blank"> <b>E-commerce</b> Sell Spicys  </a></br> Duration : 1 week  <h6>Git</h6> <a href="https://github.com/gokulakrishnan-j/atmasampanna-react" target="_blank">React</a> - <a href="https://github.com/gokulakrishnan-j/atmasampanna-node/tree/main" target="_blank">Node</a> <br/> <b>Tools</b> : <br/> Front-end : React.js <br/> Back-end : Node.js  </p>
                       <h6 >About :</h6>
                       <p > Selling a spicys at online. A application created with authentication and authorization by using jwt. Express.js is used for creating server. MongoDB is used to store a data in database  <b>jwt</b>. <b>Express.js</b> is used for creating server. <b> MongoDB</b> is used to store a data in database </p>
                     </div>
