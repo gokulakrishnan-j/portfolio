@@ -11,6 +11,7 @@ body{
     position: sticky;
    top: 0%;
    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+  
    
 }
 .name{
@@ -21,10 +22,12 @@ body{
     display: flex;
     flex-wrap: wrap;
    gap: 24px;
+   margin-left: auto;
     
 }
 .link{
-    width: 50px;
+    width: 30px;
+    
     
 }
 #my_resume_edit{
@@ -203,6 +206,28 @@ overflow: auto;
     font-size: 23px;
     letter-spacing: 1px;
 }
+.labelInput{
+    background-color: rgba(250, 235, 215, 0);
+    border: 0px;
+}
+.labelForSection{
+    background: #9e6d8100;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.labelForSection:hover{
+    color: aliceblue;
+    background-color: #201d1d;
+}
+.labelAfter650Px{
+    margin-left: auto;
+}
+.labelBefore650Px{
+    display: none;
+}
 @media(max-width:801px){
     .skills{
        
@@ -222,7 +247,23 @@ overflow: auto;
         width: 40%;
     }
 }
-
+@media(max-width:650px){
+    .labelBefore650Px{
+       display: block;
+       margin-left: 20px;
+    }
+    .labelAfter650Px{
+        display: none;
+    }
+    .navButton{
+        width: 35px;
+        background-color: #464343;
+        border-radius: 4px;
+    }
+    .labelForSection{
+       font-size: small;
+    }
+}
 @media(max-width:545px){
     .skills{
        
@@ -287,6 +328,13 @@ overflow: auto;
         width: 100%;
         font-weight: bold;
         font-size: 100%;
+    }
+    .skills_title{
+        font-size: 22px;
+        
+    }
+    .labelInput{
+        font-weight: 600;
     }
    
 }
